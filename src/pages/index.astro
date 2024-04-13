@@ -2,18 +2,31 @@
 
 ---
 
-<html>
-	<head>
-		<title>Adobe Acrobat Services PDF Embed API Sample</title>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<style>
-			
-		  </style>
-	</head>
-	<body style="margin: 0px">
-		<div class=" h-[100vh]">
-		<embed src="https://pub-d55a11d4537147b0b55a2d0c3227b48a.r2.dev/menu-sinculpa.pdf" type="application/pdf" width="100%" height="600px">
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Embedded PDF</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Styles for the iframe container */
+    .pdf-container {
+      position: relative;
+      width: 100%;
+      height: 1000px; /* Adjust height as needed */
+      overflow: hidden;
+      border: none;
+    }
+
+    .pdf-container iframe {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="pdf-container">
+    <iframe src="https://pub-d55a11d4537147b0b55a2d0c3227b48a.r2.dev/menu-sinculpa.pdf" type="application/pdf"></iframe>
+  </div>
+</body>
 </html>
